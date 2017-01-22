@@ -8,6 +8,7 @@
 
 import UIKit
 
+var tabSelected = 0
 var humidityGlobalVar = "0"
 var temperatureGlobalVar = "0"
 var heatGlobalVar = "0"
@@ -37,7 +38,7 @@ class ViewController: UIViewController {
     
     public func getJSON(){
         
-        let jsonUrl = URL(string: "http://192.168.2.7:8000/api/get_values")
+        let jsonUrl = URL(string: "http://169.233.211.156:8000/api/get_values")
         let task = URLSession.shared.dataTask(with: jsonUrl!) { (data, response, error) in
             if error != nil{
                 print("Error!")
@@ -67,6 +68,10 @@ class ViewController: UIViewController {
             }
         }
         task.resume()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tabSelected = 0
     }
 
 

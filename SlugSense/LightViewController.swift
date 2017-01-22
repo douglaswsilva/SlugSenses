@@ -19,6 +19,8 @@ class LightViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tabSelected = 3
+        
         gaugeView.thickness = 15
         gaugeView.labelFont = UIFont.systemFont(ofSize: 40, weight: UIFontWeightThin)
         gaugeView.labelColor = UIColor.white
@@ -47,6 +49,9 @@ class LightViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        tabSelected = 3
+    }
 
     /*
     // MARK: - Navigation

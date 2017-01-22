@@ -10,9 +10,12 @@ import UIKit
 
 class HeatViewController: UIViewController {
 
+    @IBOutlet weak var heatSubView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tabSelected = 4
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +24,9 @@ class HeatViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        tabSelected = 4
+    }
 
     /*
     // MARK: - Navigation

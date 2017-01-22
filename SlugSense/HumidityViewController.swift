@@ -16,19 +16,19 @@ class HumidityViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        webView = WKWebView()
-        humidityViewContainer.addSubview(webView)
-        let frame = CGRect(x: 0, y: 0, width: humidityViewContainer.bounds.width, height: humidityViewContainer.bounds.height)
-        webView.frame = frame
-        
-        let moistureURLStr = "https://people.ucsc.edu/~okdogulu/slugsense.html"
-        let moistureURL = URL(string: moistureURLStr)
-        let moistureURLRequest = URLRequest(url: moistureURL!)
-        
-        webView.load(moistureURLRequest)
-        
-        Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(reloadWebView), userInfo: nil, repeats: true)
+        tabSelected = 1
+//        webView = WKWebView()
+//        humidityViewContainer.addSubview(webView)
+//        let frame = CGRect(x: 0, y: 0, width: humidityViewContainer.bounds.width, height: humidityViewContainer.bounds.height)
+//        webView.frame = frame
+//        
+//        let moistureURLStr = "https://people.ucsc.edu/~okdogulu/slugsense.html"
+//        let moistureURL = URL(string: moistureURLStr)
+//        let moistureURLRequest = URLRequest(url: moistureURL!)
+//        
+//        webView.load(moistureURLRequest)
+//        
+//        Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(reloadWebView), userInfo: nil, repeats: true)
 
     }
     
@@ -39,6 +39,10 @@ class HumidityViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tabSelected = 1
     }
     
 

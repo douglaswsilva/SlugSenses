@@ -13,6 +13,8 @@ class MoistureViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tabSelected = 2
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +23,9 @@ class MoistureViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        tabSelected = 2
+    }
 
     /*
     // MARK: - Navigation

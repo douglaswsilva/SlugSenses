@@ -51,12 +51,12 @@ class SubView: UIView {
             label1.text = moistureGlobalVar + "%"
             icon1.image = #imageLiteral(resourceName: "MoistureForApp")
             label2.text = heatGlobalVar + "%"
-            icon2.image = #imageLiteral(resourceName: "SunForApp-2")
+            icon2.image = #imageLiteral(resourceName: "HeatForApp")
             label3.text =  humidityGlobalVar + "%"
             icon3.image = #imageLiteral(resourceName: "HumidityForApp")
             label4.text = lightGlobalVar + "%"
-            icon4.image = #imageLiteral(resourceName: "LightOnForApp")
-            gauge.labelText = temperatureGlobalVar + "%"
+            icon4.image = #imageLiteral(resourceName: "SunForApp")
+            gauge.labelText = temperatureGlobalVar + "°F"
             gauge.percentage = Float(temperatureGlobalVar)!
             
         }
@@ -66,11 +66,11 @@ class SubView: UIView {
             label1.text = moistureGlobalVar + "%"
             icon1.image = #imageLiteral(resourceName: "MoistureForApp")
             label2.text = heatGlobalVar + "%"
-            icon2.image = #imageLiteral(resourceName: "SunForApp-2")
-            label3.text = temperatureGlobalVar + "%"
+            icon2.image = #imageLiteral(resourceName: "HeatForApp")
+            label3.text = temperatureGlobalVar + "°F"
             icon3.image = #imageLiteral(resourceName: "TemperatureForApp")
             label4.text = lightGlobalVar + "%"
-            icon4.image = #imageLiteral(resourceName: "LightOnForApp")
+            icon4.image = #imageLiteral(resourceName: "SunForApp")
             gauge.labelText = humidityGlobalVar + "%"
             gauge.percentage = Float(humidityGlobalVar)!
 
@@ -81,11 +81,11 @@ class SubView: UIView {
             label1.text = humidityGlobalVar + "%"
             icon1.image = #imageLiteral(resourceName: "HumidityForApp")
             label2.text = heatGlobalVar + "%"
-            icon2.image = #imageLiteral(resourceName: "SunForApp-2")
-            label3.text = temperatureGlobalVar + "%"
+            icon2.image = #imageLiteral(resourceName: "HeatForApp")
+            label3.text = temperatureGlobalVar + "°F"
             icon3.image = #imageLiteral(resourceName: "TemperatureForApp")
             label4.text = lightGlobalVar + "%"
-            icon4.image = #imageLiteral(resourceName: "LightOnForApp")
+            icon4.image = #imageLiteral(resourceName: "SunForApp")
             gauge.labelText = moistureGlobalVar + "%"
             gauge.percentage = Float(moistureGlobalVar)!
         }
@@ -96,10 +96,10 @@ class SubView: UIView {
             icon1.image = #imageLiteral(resourceName: "HumidityForApp")
             label2.text = moistureGlobalVar + "%"
             icon2.image = #imageLiteral(resourceName: "MoistureForApp")
-            label3.text = temperatureGlobalVar + "%"
+            label3.text = temperatureGlobalVar + "°F"
             icon3.image = #imageLiteral(resourceName: "TemperatureForApp")
             label4.text = heatGlobalVar + "%"
-            icon4.image = #imageLiteral(resourceName: "SunForApp-2")
+            icon4.image = #imageLiteral(resourceName: "HeatForApp")
             gauge.labelText = lightGlobalVar + "%"
             gauge.percentage = Float(lightGlobalVar)!
         }
@@ -110,21 +110,13 @@ class SubView: UIView {
             icon1.image = #imageLiteral(resourceName: "HumidityForApp")
             label2.text = moistureGlobalVar + "%"
             icon2.image = #imageLiteral(resourceName: "MoistureForApp")
-            label3.text = temperatureGlobalVar + "%"
+            label3.text = temperatureGlobalVar + "°F"
             icon3.image = #imageLiteral(resourceName: "TemperatureForApp")
             label4.text = lightGlobalVar + "%"
-            icon4.image = #imageLiteral(resourceName: "LightOnForApp")
+            icon4.image = #imageLiteral(resourceName: "SunForApp")
             gauge.labelText = heatGlobalVar + "%"
             gauge.percentage = Float(heatGlobalVar)!
         }
     }
-    
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
 
 }

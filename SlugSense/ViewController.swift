@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 var tabSelected = 0
 var humidityGlobalVar = "0"
@@ -17,19 +18,19 @@ var lightGlobalVar = "0"
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var webView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let chartPageURL = URL(string: "http://192.168.2.7:8000/")
         let chartPageURLRequest = URLRequest(url: chartPageURL!)
-        webView.loadRequest(chartPageURLRequest)
+
         
         let timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(getJSON), userInfo: nil, repeats: true)
         timer.fire()
-        
     }
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

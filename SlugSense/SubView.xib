@@ -33,12 +33,12 @@
                     <rect key="frame" x="0.0" y="424" width="375" height="194"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SunForApp-2" translatesAutoresizingMaskIntoConstraints="NO" id="iJa-Qi-pNI">
-                    <rect key="frame" x="188" y="534" width="70" height="70"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeatForApp" translatesAutoresizingMaskIntoConstraints="NO" id="iJa-Qi-pNI">
+                    <rect key="frame" x="188" y="535" width="65" height="65"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MoistureForApp" translatesAutoresizingMaskIntoConstraints="NO" id="ZxK-tB-x7G">
-                    <rect key="frame" x="7" y="433" width="70" height="70"/>
+                    <rect key="frame" x="10" y="437" width="65" height="65"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSW-j0-F70">
@@ -53,12 +53,12 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.79902988669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LightOnForApp" translatesAutoresizingMaskIntoConstraints="NO" id="xGu-q1-8an">
-                    <rect key="frame" x="188" y="433" width="70" height="70"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SunForApp" translatesAutoresizingMaskIntoConstraints="NO" id="xGu-q1-8an">
+                    <rect key="frame" x="188" y="437" width="65" height="65"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TemperatureForApp" translatesAutoresizingMaskIntoConstraints="NO" id="f7D-gC-OQk">
-                    <rect key="frame" x="7" y="535" width="70" height="70"/>
+                    <rect key="frame" x="10" y="535" width="65" height="65"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnY-YU-Rmj">
@@ -75,8 +75,22 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2q-zT-WDY">
+                    <rect key="frame" x="274" y="544" width="89" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0G-aK-Cnn">
+                    <rect key="frame" x="16" y="43" width="343" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="46"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="owk-x7-r1d">
-                    <rect key="frame" x="62" y="110" width="250" height="250"/>
+                    <rect key="frame" x="62" y="128" width="250" height="250"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kJC-aC-9eW" customClass="GaugeView" customModule="SlugSense" customModuleProvider="target">
@@ -99,29 +113,15 @@
                         </view>
                     </subviews>
                 </stackView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2q-zT-WDY">
-                    <rect key="frame" x="274" y="544" width="89" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="40"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0G-aK-Cnn">
-                    <rect key="frame" x="16" y="43" width="342" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="46"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <point key="canvasLocation" x="33.5" y="135.5"/>
         </view>
     </objects>
     <resources>
-        <image name="LightOnForApp" width="78" height="78"/>
+        <image name="HeatForApp" width="50" height="50"/>
         <image name="Lines" width="375" height="223"/>
         <image name="MoistureForApp" width="61" height="61"/>
-        <image name="SunForApp-2" width="50" height="50"/>
+        <image name="SunForApp" width="50" height="50"/>
         <image name="TemperatureForApp" width="70" height="70"/>
     </resources>
 </document>

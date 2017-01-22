@@ -17,19 +17,6 @@ class HumidityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tabSelected = 1
-//        webView = WKWebView()
-//        humidityViewContainer.addSubview(webView)
-//        let frame = CGRect(x: 0, y: 0, width: humidityViewContainer.bounds.width, height: humidityViewContainer.bounds.height)
-//        webView.frame = frame
-//        
-//        let moistureURLStr = "https://people.ucsc.edu/~okdogulu/slugsense.html"
-//        let moistureURL = URL(string: moistureURLStr)
-//        let moistureURLRequest = URLRequest(url: moistureURL!)
-//        
-//        webView.load(moistureURLRequest)
-//        
-//        Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(reloadWebView), userInfo: nil, repeats: true)
-
     }
     
     func reloadWebView(){
@@ -44,16 +31,5 @@ class HumidityViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         tabSelected = 1
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

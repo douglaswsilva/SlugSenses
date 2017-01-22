@@ -17,6 +17,8 @@
 		68A97FD41E3380660098D068 /* MoistureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A97FD31E3380660098D068 /* MoistureViewController.swift */; };
 		68A97FD61E3380760098D068 /* LightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A97FD51E3380760098D068 /* LightViewController.swift */; };
 		68A97FD81E3380850098D068 /* HeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A97FD71E3380850098D068 /* HeatViewController.swift */; };
+		68A97FDE1E34219D0098D068 /* GaugeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A97FDC1E34219D0098D068 /* GaugeLayer.swift */; };
+		68A97FDF1E34219D0098D068 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A97FDD1E34219D0098D068 /* GaugeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		68A97FD31E3380660098D068 /* MoistureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoistureViewController.swift; sourceTree = "<group>"; };
 		68A97FD51E3380760098D068 /* LightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightViewController.swift; sourceTree = "<group>"; };
 		68A97FD71E3380850098D068 /* HeatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeatViewController.swift; sourceTree = "<group>"; };
+		68A97FDC1E34219D0098D068 /* GaugeLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaugeLayer.swift; sourceTree = "<group>"; };
+		68A97FDD1E34219D0098D068 /* GaugeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 				68A97FD51E3380760098D068 /* LightViewController.swift */,
 				68A97FD71E3380850098D068 /* HeatViewController.swift */,
 				68A97FBD1E3353A70098D068 /* Main.storyboard */,
+				68A97FE01E3421EF0098D068 /* Class */,
 				68A97FC31E3353A70098D068 /* Assets.xcassets */,
 			);
 			path = SlugSense;
@@ -85,6 +90,15 @@
 				68A97FC01E3353A70098D068 /* SlugSense.xcdatamodeld */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68A97FE01E3421EF0098D068 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				68A97FDC1E34219D0098D068 /* GaugeLayer.swift */,
+				68A97FDD1E34219D0098D068 /* GaugeView.swift */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,11 +175,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				68A97FC21E3353A70098D068 /* SlugSense.xcdatamodeld in Sources */,
+				68A97FDE1E34219D0098D068 /* GaugeLayer.swift in Sources */,
 				68A97FD81E3380850098D068 /* HeatViewController.swift in Sources */,
 				68A97FD61E3380760098D068 /* LightViewController.swift in Sources */,
 				68A97FBC1E3353A70098D068 /* ViewController.swift in Sources */,
 				68A97FBA1E3353A70098D068 /* AppDelegate.swift in Sources */,
 				68A97FD21E336C180098D068 /* HumidityViewController.swift in Sources */,
+				68A97FDF1E34219D0098D068 /* GaugeView.swift in Sources */,
 				68A97FD41E3380660098D068 /* MoistureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,13 +9,39 @@
 import UIKit
 
 class LightViewController: UIViewController {
-
+    
+    @IBOutlet weak var light: UILabel!
+    @IBOutlet weak var humid: UILabel!
+    @IBOutlet weak var solar: UILabel!
+    @IBOutlet weak var temp: UILabel!
+    @IBOutlet weak var gaugeView: GaugeView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        gaugeView.thickness = 15
+        gaugeView.labelFont = UIFont.systemFont(ofSize: 40, weight: UIFontWeightThin)
+        gaugeView.labelColor = UIColor.white
+//        gaugeView.gaugeBackgroundColor = UIColor.white
+//        gaugeView.gaugeColor = UIColor.cyan
+        gaugeView.startAngle = 180
+        gaugeView.animationDuration = 2.00
+        
+        let timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateValues), userInfo: nil, repeats: true)
+        timer.fire()
 
-        // Do any additional setup after loading the view.
     }
-
+    
+    @objc private func updateValues(){
+        humid.text = humidityGlobalVar + "%"
+        solar.text = heatGlobalVar + "%"
+        temp.text = temperatureGlobalVar + "%"
+        light.text = lightGlobalVar + "%"
+        gaugeView.labelText = moistureGlobalVar + "%"
+        gaugeView.percentage = Float(moistureGlobalVar)!
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

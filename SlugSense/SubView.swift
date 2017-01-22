@@ -35,7 +35,7 @@ class SubView: UIView {
         gauge.thickness = 15
         gauge.labelFont = UIFont.systemFont(ofSize: 40, weight: UIFontWeightThin)
         gauge.labelColor = UIColor.white
-        gauge.startAngle = 180
+        gauge.startAngle = 270
         gauge.labelText = "0%"
         gauge.animationDuration = 1.00
 

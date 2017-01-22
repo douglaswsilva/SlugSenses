@@ -24,7 +24,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let chartPageURL = URL(string: "http://192.168.2.7:8000/")
         let chartPageURLRequest = URLRequest(url: chartPageURL!)
-
+        
+        UIApplication.shared.applicationIconBadgeNumber = 0
         
         let timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(getJSON), userInfo: nil, repeats: true)
         timer.fire()

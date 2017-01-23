@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     
     public func getJSON(){
         
-        let jsonUrl = URL(string: "http://169.233.211.156:8000/api/get_values")
+        let jsonUrl = URL(string: "http://172.20.10.2:8000/api/get_values")
         let task = URLSession.shared.dataTask(with: jsonUrl!) { (data, response, error) in
             if error != nil{
                 print("Error!")
@@ -52,7 +52,10 @@ class ViewController: UIViewController {
                         let myJson = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
                         print(myJson)
                         var intString = myJson["solar"] as! Int
-                        heatGlobalVar = String(intString)
+                        //heatGlobalVar = String(intString)
+                        
+                        intString = myJson["solar"] as! Int
+                        lightGlobalVar = String(intString)
                         
                         intString = myJson["temp"] as! Int
                         temperatureGlobalVar = String(intString)

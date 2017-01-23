@@ -50,7 +50,7 @@ class SubView: UIView {
             title.text = "Temperature"
             label1.text = moistureGlobalVar + "%"
             icon1.image = #imageLiteral(resourceName: "MoistureForApp")
-            label2.text = heatGlobalVar + "%"
+            label2.text = "Lv" + heatGlobalVar
             icon2.image = #imageLiteral(resourceName: "HeatForApp")
             label3.text =  humidityGlobalVar + "%"
             icon3.image = #imageLiteral(resourceName: "HumidityForApp")
@@ -65,7 +65,7 @@ class SubView: UIView {
             title.text = "Humidity"
             label1.text = moistureGlobalVar + "%"
             icon1.image = #imageLiteral(resourceName: "MoistureForApp")
-            label2.text = heatGlobalVar + "%"
+            label2.text = "Lv" + heatGlobalVar
             icon2.image = #imageLiteral(resourceName: "HeatForApp")
             label3.text = temperatureGlobalVar + "°F"
             icon3.image = #imageLiteral(resourceName: "TemperatureForApp")
@@ -80,7 +80,7 @@ class SubView: UIView {
             title.text = "Moisture"
             label1.text = humidityGlobalVar + "%"
             icon1.image = #imageLiteral(resourceName: "HumidityForApp")
-            label2.text = heatGlobalVar + "%"
+            label2.text = "Lv" + heatGlobalVar
             icon2.image = #imageLiteral(resourceName: "HeatForApp")
             label3.text = temperatureGlobalVar + "°F"
             icon3.image = #imageLiteral(resourceName: "TemperatureForApp")
@@ -98,7 +98,7 @@ class SubView: UIView {
             icon2.image = #imageLiteral(resourceName: "MoistureForApp")
             label3.text = temperatureGlobalVar + "°F"
             icon3.image = #imageLiteral(resourceName: "TemperatureForApp")
-            label4.text = heatGlobalVar + "%"
+            label4.text = "Lv" + heatGlobalVar
             icon4.image = #imageLiteral(resourceName: "HeatForApp")
             gauge.labelText = lightGlobalVar + "%"
             gauge.percentage = Float(lightGlobalVar)!
@@ -114,7 +114,7 @@ class SubView: UIView {
             icon3.image = #imageLiteral(resourceName: "TemperatureForApp")
             label4.text = lightGlobalVar + "%"
             icon4.image = #imageLiteral(resourceName: "SunForApp")
-            gauge.labelText = heatGlobalVar + "%"
+            gauge.labelText = "Lv" + heatGlobalVar
             gauge.percentage = Float(heatGlobalVar)!
         }
     }
